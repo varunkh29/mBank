@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    tools:context=".Main2Activity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="160dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        app:srcCompat="@drawable/bank" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16sp">
+
+
+        <EditText
+            android:id="@+id/userEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8sp"
+            android:drawableLeft="@drawable/ic_username"
+            android:drawablePadding="8sp"
+            android:hint="Username" />
+
+        <EditText
+            android:id="@+id/passEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8sp"
+            android:drawableLeft="@drawable/ic_password"
+            android:drawablePadding="8sp"
+            android:hint="Password"
+            android:password="true" />
+
+
+        <Button
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30sp"
+            android:background="@drawable/buttonshape"
+            android:onClick="shownext"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="Login"
+            android:textColor="#FFF8F0"
+            android:textColorHighlight="@color/colorPrimary"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:onClick="showforgot"
+            android:text="Forgot Password ?"
+            android:textColorHighlight="@color/colorPrimary" />
+
+
+    </LinearLayout>
+</LinearLayout>

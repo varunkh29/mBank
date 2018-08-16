@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewTranscation"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send To"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginTop="30sp"
+        android:layout_marginLeft="25sp"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Account No"
+        android:layout_marginRight="50sp"
+        android:id="@+id/accno"
+        android:layout_marginLeft="25sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginTop="30sp"
+        android:layout_marginLeft="25sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Amount"
+        android:id="@+id/amt1"
+        android:layout_marginLeft="25sp"
+        android:layout_marginRight="50sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DAte"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginTop="30sp"
+        android:layout_marginLeft="25sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="DAte"
+        android:id="@+id/date1"
+        android:layout_marginLeft="25sp"
+        android:layout_marginRight="50sp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make Payment"
+        android:onClick="makep"
+        android:layout_marginTop="45sp"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"/>
+
+</LinearLayout>
